@@ -37,3 +37,21 @@ class User:
     def set_email(self, new_email):
         self.email = new_email
 
+
+class UserCharityInfo(User):
+
+    def __init__(self, charity_categories, charities):
+        self.charity_categories = charity_categories
+        self.charities = charities
+
+    def add_charity_category(self, category):
+        self.charity_categories.append(category)
+
+    def remove_charity_category(self, category):
+        self.charity_categories.remove(category)
+
+    def add_charity(self, charity):
+        self.charities.append(charity)
+
+    def remove_charity(self, charity):
+        self.charities.remove(charity)
