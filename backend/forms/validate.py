@@ -5,7 +5,8 @@ def is_valid_name(name):
     name_max_length = 30
     if name == "":
         return False
-    return True
+    if name.isalpha() and len(name) < name_max_length:
+        return True
 
 
 def is_valid_email(email):
@@ -17,5 +18,8 @@ def is_valid_email(email):
 
 
 def is_valid_phone(phone):
-    if len(phone) != 12:
+    if len(phone.strip()) != 12:
         return False
+    if len(phone.strip()) == 12 and phone.isnumeric():
+        return True
+
