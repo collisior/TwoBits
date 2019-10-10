@@ -1,2 +1,0 @@
-# TwoBits
-Mobile Application
