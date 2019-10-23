@@ -25,7 +25,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.a2bits.R;
-
+//***************************************************************************************/
+//        *    Title: Signup button source code
+//        *    Author:
+//        *    Date: 2011
+//        *    Code version: 1.0
+//        *    Availability: https://www.youtube.com/watch?v=bgIUdb-7Rqo
+//        *
+//        ***************************************************************************************/
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
