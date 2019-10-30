@@ -5,11 +5,8 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".ui.login.LoginActivity">
+
 
     <ImageView
         android:id="@+id/imageView3"
@@ -17,58 +14,13 @@
         android:layout_height="420dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
+        android:adjustViewBounds="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.842"
-        app:srcCompat="@drawable/circle"
-        android:adjustViewBounds="true"/>
+        app:srcCompat="@drawable/circle" />
 
-    <EditText
-        android:id="@+id/firstName"
-        android:layout_width="301dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="490dp"
-        android:autofillHints=""
-        android:background="@drawable/border"
-        app:fontFamily="Roboto"
-        android:hint="@string/prompt_firstName"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:selectAllOnFocus="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
-
-    <EditText
-        android:id="@+id/LastName"
-        android:layout_width="301dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="440dp"
-        android:autofillHints=""
-        app:fontFamily="Roboto"
-        android:background="@drawable/border"
-        android:hint="@string/prompt_LastName"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:selectAllOnFocus="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
 
     <EditText
         android:id="@+id/username"
@@ -79,19 +31,65 @@
         android:layout_marginTop="161dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="240dp"
         android:autofillHints=""
-        app:fontFamily="Roboto"
         android:background="@drawable/border"
         android:hint="@string/prompt_username"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
+        app:fontFamily="Roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.623" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="301dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginBottom="457dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:hint="@string/prompt_firstName"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:selectAllOnFocus="true"
+        app:fontFamily="Roboto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="301dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginBottom="345dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:hint="@string/prompt_LastName"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:selectAllOnFocus="true"
+        app:fontFamily="Roboto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
 
     <EditText
         android:id="@+id/email"
@@ -99,22 +97,22 @@
         android:layout_height="60dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="223dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="200dp"
-        app:fontFamily="Roboto"
+        android:layout_marginBottom="195dp"
         android:autofillHints=""
         android:background="@drawable/border"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
+        app:fontFamily="Roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.645" />
 
     <EditText
         android:id="@+id/mobileNumber"
@@ -122,34 +120,32 @@
         android:layout_height="60dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="305dp"
+        android:layout_marginTop="310dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="83dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="195dp"
         android:autofillHints=""
-        app:fontFamily="Roboto"
         android:background="@drawable/border"
         android:hint="@string/prompt_MobileNumber"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
+        app:fontFamily="Roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.831" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="301dp"
-        android:layout_height="68dp"
+        android:layout_height="60dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="425dp"
+        android:layout_marginTop="430dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="280dp"
         android:autofillHints=""
-        app:fontFamily="Roboto"
         android:background="@drawable/border"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_up_short"
@@ -157,16 +153,17 @@
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
+        app:fontFamily="Roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.317" />
 
     <EditText
         android:id="@+id/confirmPassword"
         android:layout_width="301dp"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="429dp"
@@ -174,7 +171,6 @@
         android:layout_marginRight="21dp"
         android:layout_marginBottom="72dp"
         android:autofillHints=""
-        app:fontFamily="Roboto"
         android:background="@drawable/border"
         android:hint="@string/prompt_ConfirmPassword"
         android:imeActionLabel="@string/action_sign_up_short"
@@ -182,12 +178,12 @@
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
+        app:fontFamily="Roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
-
+        app:layout_constraintVertical_bias="0.787" />
 
     <Button
         android:id="@+id/login"
@@ -225,7 +221,7 @@
         app:layout_constraintHorizontal_bias="0.369"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="0.312" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
