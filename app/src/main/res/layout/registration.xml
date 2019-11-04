@@ -54,7 +54,7 @@
         android:layout_marginTop="105dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="53dp"
-        android:layout_marginBottom="457dp"
+        android:layout_marginBottom="430dp"
         android:autofillHints=""
         android:background="@drawable/border"
         android:hint="@string/prompt_firstName"
@@ -145,6 +145,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="430dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginBottom="164dp"
         android:autofillHints=""
         android:background="@drawable/border"
         android:hint="@string/prompt_password"
@@ -158,7 +159,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/confirmPassword"
@@ -169,7 +170,7 @@
         android:layout_marginTop="429dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="21dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="90dp"
         android:autofillHints=""
         android:background="@drawable/border"
         android:hint="@string/prompt_ConfirmPassword"
@@ -191,7 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="641dp"
+        android:layout_marginTop="590dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="5dp"
         android:background="@color/login1"
@@ -201,10 +202,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/imageButton"
