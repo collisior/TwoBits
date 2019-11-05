@@ -15,18 +15,17 @@
 
     <EditText
         android:id="@+id/username"
-        style="@android:style/Widget.EditText"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_marginTop="224dp"
         android:layout_marginBottom="441dp"
         android:background="@drawable/border"
+        app:fontFamily="Roboto"
         android:hint="EMAIL"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
         android:typeface="normal"
-        app:fontFamily="@font/roboto_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,13 +38,13 @@
         android:layout_marginTop="265dp"
         android:layout_marginBottom="384dp"
         android:background="@drawable/border"
+        app:fontFamily="Roboto"
         android:hint="PASSWORD"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
-        app:fontFamily="@font/roboto_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
@@ -62,7 +61,6 @@
         android:layout_marginBottom="213dp"
         android:background="@color/login1"
         android:enabled="false"
-        android:fontFamily="@font/roboto"
         android:text="LOGIN"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
@@ -73,7 +71,6 @@
 
     <Button
         android:id="@+id/signUp"
-        style="@style/RobotoButtonStyle"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -81,7 +78,6 @@
         android:layout_marginBottom="139dp"
         android:background="@color/login2"
         android:enabled="true"
-        android:fontFamily="@font/roboto"
         android:text="SIGN UP"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
@@ -139,14 +135,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hellomyname is"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="427dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
