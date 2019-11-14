@@ -13,7 +13,7 @@
     </style>
 
     <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
-        <item name="android:fontFamily">@font/roboto-thin</item>
+        <item name="android:fontFamily">@font/roboto_thin</item>
     </style>
     <style name="RobotoEditTextStyle" parent="android:Widget.EditText">
         <item name="android:fontFamily">@font/roboto_light</item>
