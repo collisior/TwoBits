@@ -20,14 +20,15 @@
         android:layout_marginTop="224dp"
         android:layout_marginBottom="441dp"
         android:background="@drawable/border"
-        app:fontFamily="Roboto"
         android:hint="EMAIL"
         android:inputType="textEmailAddress"
         android:paddingLeft="15dp"
         android:selectAllOnFocus="true"
         android:typeface="normal"
+        app:fontFamily="Roboto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
