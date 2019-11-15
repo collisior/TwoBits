@@ -63,7 +63,7 @@
         android:layout_marginTop="300dp"
         android:layout_marginBottom="213dp"
         android:background="@color/login1"
-        android:enabled="false"
+        android:enabled="true"
         android:text="LOGIN"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
