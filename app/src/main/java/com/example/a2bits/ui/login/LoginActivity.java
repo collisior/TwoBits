@@ -55,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToProfile();
+                attemptLogin();
             }
         });
 
@@ -91,14 +91,14 @@ public class LoginActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(LoginActivity.this,error.toString(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginActivity.this,"Wrong Username or password",Toast.LENGTH_LONG).show();
                     }
                 }){
             @Override
             protected Map<String,String> getParams(){
                 Map<String,String> params = new HashMap<String, String>();
                 params.put("username",usernameEditText.getText().toString());
-                params.put("email",passwordEditText.getText().toString());
+                params.put("password",passwordEditText.getText().toString());
                 return params;
             }
 

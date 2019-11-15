@@ -41,9 +41,12 @@ public class RegistrationActivity extends AppCompatActivity {
         final TextView email = (TextView) findViewById(R.id.email);
         final TextView password = (TextView) findViewById(R.id.password);
 
+        final TextView firstName = (TextView) findViewById(R.id.firstName);
+        final TextView lastName = (TextView) findViewById(R.id.LastName);
+
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://127.0.0.1:8000/api/users/";
+        String url ="http://10.0.2.2:8000/api/users/";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
@@ -55,6 +58,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        Log.d("debug", "signUp: "+ error);
+
                         Toast.makeText(RegistrationActivity.this,error.toString(),Toast.LENGTH_LONG).show();
                     }
                 }){
@@ -64,6 +69,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 params.put("username",userName.getText().toString());
                 params.put("email",email.getText().toString());
                 params.put("password",password.getText().toString());
+            //    params.put("profile", {["first_Name", firstName.toString()],["last_name", lastName.toString()]};
                 return params;
             }
 
