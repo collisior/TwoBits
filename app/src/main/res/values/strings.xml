@@ -17,4 +17,6 @@
     <string name="title_activity_login">Sign in</string>
     <string name="title_activity_registration">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
+    <string name="person_name">WILL MUNOZ</string>
+    <string name="person_username">@willmunoz</string>
 </resources>
