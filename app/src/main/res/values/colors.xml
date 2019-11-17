@@ -6,4 +6,5 @@
     <color name="login1">#4792DD</color>
     <color name="login2">#034383</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
