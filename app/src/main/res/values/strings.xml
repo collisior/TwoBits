@@ -21,5 +21,5 @@
     <string name="person_username">@willmunoz</string>
     <string name="charity_name">American Red Cross</string>
     <string name="charity_email">@americanredcross</string>
-    <string name="notification_title1">CHARITY INTERESTS</string>
+    <string name="notification_title1">CHARITY INTERESTS<u>underline</u></string>
 </resources>
