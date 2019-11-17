@@ -22,4 +22,13 @@
     <string name="charity_name">American Red Cross</string>
     <string name="charity_email">@americanredcross</string>
     <string name="notification_title1">CHARITY INTERESTS<u>underline</u></string>
+    <string name="following_button">FOLLOWING</string>
+    <string name="friends_button">FRIENDS</string>
+    <string name="stats_button">VIEW MY STATS</string>
+    <string name="badges">BADGES</string>
+    <string name="badge_one">NEWBIE</string>
+    <string name="badge_two">CERTIFIED DONOR</string>
+    <string name="badge_three">CHARITY LOVE</string>
+
+
 </resources>
