@@ -63,28 +63,66 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.44" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="314dp"
-        android:layout_height="134dp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="300dp"
-        android:layout_marginBottom="200dp"
-        android:clipToPadding="true"
-        android:foregroundGravity="center"
-        android:overScrollMode="never"
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_width="314dp"-->
+<!--        android:layout_height="134dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:layout_marginBottom="200dp"-->
+<!--        android:clipToPadding="true"-->
+<!--        android:foregroundGravity="center"-->
+<!--        android:overScrollMode="never"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.484"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.268" />-->
+
+    <Button
+        android:id="@+id/following_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/login1"
+        android:text="@string/following_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/friends_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/login2"
+        android:text="@string/friends_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/stats_button"
+        android:layout_width="166dp"
+        android:layout_height="39dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/stats_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="395dp"
         android:layout_height="202dp"
-        android:background="@color/white"
+        android:background="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="245dp"
+        android:layout_marginTop="255dp"
         android:layout_marginEnd="5dp"
         android:scaleX="0.15"
         android:scaleY=".15"
@@ -133,7 +171,7 @@
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="@android:dimen/notification_large_icon_width"
         android:scaleX=".15"
         android:scaleY=".15"
@@ -150,7 +188,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="295dp"
+        android:layout_marginTop="315dp"
         android:layout_marginEnd="90dp"
         android:scaleX=".15"
         android:scaleY=".15"
@@ -167,7 +205,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@android:dimen/thumbnail_height"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="32dp"
         android:scaleX=".15"
         android:scaleY=".15"
@@ -183,6 +221,7 @@
         android:id="@+id/badge_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/badge_one"
         android:textColor="@color/black"
@@ -197,6 +236,7 @@
         android:id="@+id/badge_two"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/badge_two"
         android:textAlignment="center"
@@ -212,6 +252,7 @@
         android:id="@+id/badge_three"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/badge_three"
         android:textAlignment="center"
@@ -227,6 +268,7 @@
         android:id="@+id/badge_three2"
         android:layout_width="69dp"
         android:layout_height="60dp"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/badge_three"
         android:textAlignment="center"
