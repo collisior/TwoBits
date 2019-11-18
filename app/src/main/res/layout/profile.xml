@@ -117,6 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="245dp"
         android:layout_marginEnd="5dp"
         android:scaleX="0.15"
         android:scaleY=".15"
@@ -124,7 +125,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/badge" />
 
@@ -132,6 +133,7 @@
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="@android:dimen/notification_large_icon_width"
         android:scaleX=".15"
         android:scaleY=".15"
@@ -139,7 +141,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.26999998"
         app:srcCompat="@drawable/diploma" />
 
@@ -147,16 +149,17 @@
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@android:dimen/notification_large_icon_width"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="90dp"
         android:scaleX=".15"
         android:scaleY=".15"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366"
         app:srcCompat="@drawable/trophy" />
 
     <ImageView
@@ -164,6 +167,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@android:dimen/thumbnail_height"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="32dp"
         android:scaleX=".15"
         android:scaleY=".15"
@@ -171,7 +175,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.29000002"
         app:srcCompat="@drawable/trophy" />
 
