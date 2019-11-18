@@ -24,6 +24,11 @@ public class profileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
 
+//        Title: Android Swipe Views using Viewpager
+//        Author: Haerul Muttaqin
+//        Date: 2019
+//        Code version: 1.0https://www.youtube.com/watch?v=UsXv6VRqZKs
+
         models = new ArrayList<>();
         models.add(new Model(R.drawable.redcross, "Charity Interests",
                 "American Red Cross", "@americanredcross"));
