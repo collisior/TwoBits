@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -34,6 +35,8 @@ import com.example.a2bits.R;
 
 import java.util.HashMap;
 import java.util.Map;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -72,6 +75,17 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void createLoginAlert(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+        builder.setMessage("Wrong Username Or Password");
+        AlertDialog dialog = builder.create(); builder.create();
+        builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked OK button
+            }
+        });
+        dialog.show();
+    }
     public void attemptLogin(){
         final EditText usernameEditText = findViewById(R.id.username);
         final EditText passwordEditText = findViewById(R.id.password);
@@ -91,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(LoginActivity.this,"Wrong Username or password",Toast.LENGTH_LONG).show();
+                        createLoginAlert();
                     }
                 }){
             @Override
