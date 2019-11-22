@@ -42,6 +42,11 @@ public class RegistrationActivity extends AppCompatActivity {
             });
         }
 
+        public void openCategories(){
+            Intent intent = new Intent(this, categoriesActivity.class);
+            startActivity(intent);
+        }
+
     public void signUp(){
 
 
@@ -61,13 +66,12 @@ public class RegistrationActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Toast.makeText(RegistrationActivity.this,response.toString(),Toast.LENGTH_LONG).show();
-
+                        openCategories();
                     }
                 }, new Response.ErrorListener() {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                VolleyLog.d("FUCK", "Error: " + error.getMessage());
 
             }
         }) {
