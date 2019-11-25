@@ -30,6 +30,6 @@
         android:width="80dp"
         android:gravity="center"
         android:top="-17dp"
-        android:drawable="@drawable/pawprint">
+        android:drawable="@drawable/firstaidkit">
     </item>
 </layer-list>

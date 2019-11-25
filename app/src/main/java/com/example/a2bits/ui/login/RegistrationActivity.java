@@ -37,7 +37,7 @@ public class RegistrationActivity extends AppCompatActivity {
             signUpButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    signUp();
+                    openCategories();
                 }
             });
         }
