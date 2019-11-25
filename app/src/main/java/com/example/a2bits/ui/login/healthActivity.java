@@ -1,4 +1,4 @@
-package com.example.a2bits.ui;
+package com.example.a2bits.ui.login;
 
 import android.os.Bundle;
 

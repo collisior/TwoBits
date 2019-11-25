@@ -29,6 +29,12 @@
     <string name="badge_one">NEWBIE</string>
     <string name="badge_two">CERTIFIED DONOR</string>
     <string name="badge_three">CHARITY LOVE</string>
+    <string name="healthSummary">Nonprofit health care organizations
+    provide medical services (this can
+    also include dental, psychiatric or
+    other specialized health services) as
+    well as educational and preventative
+    care services.</string>
 
 
 </resources>
