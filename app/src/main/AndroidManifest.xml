@@ -12,17 +12,17 @@
         android:networkSecurityConfig="@xml/network_security_config"
 
         android:theme="@style/AppTheme">
-        <activity android:name=".bankcardinfo"></activity>
-        <activity android:name=".main" />
-        <activity
-            android:name=".splash"
-            android:label="Splash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--        <activity android:name=".bankcardinfo"></activity>-->
+<!--        <activity android:name=".main" />-->
+<!--        <activity-->
+<!--            android:name=".splash"-->
+<!--            android:label="Splash">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login">
@@ -69,10 +69,15 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.plaid.link.LinkActivity" />
+
+        <meta-data android:name="com.plaid.link.public_key"
+            android:value="PLAID_API_PUBLIC_KEY"/>
+
+<!--        <meta-data-->
+<!--            android:name="preloaded_fonts"-->
+<!--            android:resource="@array/preloaded_fonts" />-->
+<!--        <uses-library android:name="org.apache.http.legacy" android:required="false"/>-->
 
     </application>
 
