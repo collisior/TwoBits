@@ -37,15 +37,19 @@ public class RegistrationActivity extends AppCompatActivity {
             signUpButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    openCategories();
+                    openStep();
                 }
             });
         }
-
-        public void openCategories(){
-            Intent intent = new Intent(this, categoriesActivity.class);
+        public void openStep(){
+            Intent intent = new Intent(this, postRegInst.class);
             startActivity(intent);
         }
+
+       // public void openCategories(){
+         //   Intent intent = new Intent(this, categoriesActivity.class);
+           // startActivity(intent);
+        //}
 
     public void signUp(){
 
@@ -66,7 +70,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Toast.makeText(RegistrationActivity.this,response.toString(),Toast.LENGTH_LONG).show();
-                        openCategories();
+                        openStep();
                     }
                 }, new Response.ErrorListener() {
 
