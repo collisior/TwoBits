@@ -29,6 +29,16 @@
     <string name="badge_one">NEWBIE</string>
     <string name="badge_two">CERTIFIED DONOR</string>
     <string name="badge_three">CHARITY LOVE</string>
-
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="welcome_reg">WELCOME TO</string>
+    <string name="step1">You choose, you donate.</string>
+    <string name="step1desc">Choose a charity, political organization, or a general category to designate donations to.</string>
+    <string name="step2">Enter card or bank information.</string>
+    <string name="step2desc">Enter the card and/or bank account you would like to donate money from.
+    All your information will be kept secure!</string>
 
 </resources>
