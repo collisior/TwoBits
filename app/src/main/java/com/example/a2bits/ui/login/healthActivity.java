@@ -1,6 +1,5 @@
 package com.example.a2bits.ui.login;
 
-import android.animation.ArgbEvaluator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,17 +7,19 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.a2bits.R;
-import com.example.a2bits.ui.Adaptor;
-import com.example.a2bits.ui.Model;
+//import com.example.a2bits.ui.Adaptor;
+//import com.example.a2bits.ui.Model;
 
 import java.util.ArrayList;
-import java.util.List;
+//import java.util.List;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.viewpager.widget.ViewPager;
-import com.plaid.linkbase.models.LinkEventListener;
+//import androidx.appcompat.widget.Toolbar;
+//import androidx.viewpager.widget.ViewPager;
+
+//import com.plaid.linkbase.models.BaseLinkConfiguration;
+//import com.plaid.linkbase.models.LinkEventListener;
 
 
 import com.plaid.link.Plaid;
@@ -26,15 +27,9 @@ import com.plaid.linkbase.models.LinkConfiguration;
 import com.plaid.linkbase.models.LinkConnection;
 import com.plaid.linkbase.models.LinkConnectionMetadata;
 import com.plaid.linkbase.models.PlaidProduct;
-import kotlin.Unit;
+//import kotlin.Unit;
 
 public class healthActivity extends AppCompatActivity {
-
-    ViewPager viewPager;
-    Adaptor adaptor;
-    List<Model> models;
-    Integer[] colors = null;
-    ArgbEvaluator argbEvaluator = new ArgbEvaluator();
 
     private static final int LINK_REQUEST_CODE = 1;
     private TextView contentTextView;
@@ -46,17 +41,9 @@ public class healthActivity extends AppCompatActivity {
         Log.d("", "donate button see");
 
         Button donateButton = findViewById(R.id.donateHealth);
-//        donateButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                payHealth();
-//            }
-//        });
+
         donateButton.setOnClickListener(view -> {
-            Plaid.setLinkEventListener(new LinkEventListener(it -> {
-                Log.i("Event", it.toString());
-                return Unit.INSTANCE;
-            }));
+
             Log.d("donate button pressed", "PROCESS initiated");
             ArrayList<PlaidProduct> products = new ArrayList<>();
             products.add(PlaidProduct.TRANSACTIONS);
