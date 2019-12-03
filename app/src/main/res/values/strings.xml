@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">2Bits</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">   EMAIL</string>
+    <string name="prompt_firstName">  FIRST NAME</string>
+    <string name="prompt_LastName">  LAST NAME</string>
+    <string name="prompt_MobileNumber">  MOBILE NUMBER</string>
+    <string name="prompt_password">  PASSWORD</string>
+    <string name="prompt_ConfirmPassword"> CONFIRM PASSWORD</string>
+    <string name="action_sign_up">  SIGN UP</string>
+    <string name="action_sign_up_short">Sign Up</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="prompt_username">USERNAME</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_registration">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="person_name">WILL MUNOZ</string>
+    <string name="person_username">@willmunoz</string>
+    <string name="charity_name">American Red Cross</string>
+    <string name="charity_email">@americanredcross</string>
+    <string name="notification_title1">CHARITY INTERESTS<u>underline</u></string>
+    <string name="following_button">FOLLOWING</string>
+    <string name="friends_button">FRIENDS</string>
+    <string name="stats_button">VIEW MY STATS</string>
+    <string name="badges">BADGES</string>
+    <string name="badge_one">NEWBIE</string>
+    <string name="badge_two">CERTIFIED DONOR</string>
+    <string name="badge_three">CHARITY LOVE</string>
+    <string name="healthSummary">Nonprofit health care organizations
+    provide medical services (this can
+    also include dental, psychiatric or
+    other specialized health services) as
+    well as educational and preventative
+    care services.</string>
+
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="welcome_reg">WELCOME TO</string>
+    <string name="step1">You choose, you donate.</string>
+    <string name="step1desc">Choose a charity, political organization, or a general category to designate donations to.</string>
+    <string name="step2">Enter card or bank information.</string>
+    <string name="step2desc">Enter the card and/or bank account you would like to donate money from.
+    All your information will be kept secure!</string>
+
+</resources>
