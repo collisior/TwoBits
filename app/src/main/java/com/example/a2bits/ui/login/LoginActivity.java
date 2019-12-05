@@ -25,10 +25,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.a2bits.R;
@@ -38,9 +40,23 @@ import java.util.Map;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
+    private static String token;
+    private static String id;
+
+    public static String getToken(){
+        return token;
+    }
+    public static String getId(){
+        return id;
+    }
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,8 +86,11 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void goToProfile(){
+    public void goToProfile(String token){
         Intent intent = new Intent(this, profileActivity.class);
+        intent.putExtra("token: ",token );
+        intent.putExtra("id: ",token );
+        Log.d("RESPONSE:", token);
         startActivity(intent);
     }
 
@@ -92,35 +111,57 @@ public class LoginActivity extends AppCompatActivity {
 
         RequestQueue queue = Volley.newRequestQueue(this);
         String url ="http://10.0.2.2:8000/api/users/login/";
+        JSONObject jsonObject = null;
+        try {
+            jsonObject = getJsonObject();
+        } catch (JSONException e) {
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                new Response.Listener<String>() {
+        }
+        Log.d("JSONOBJECT",jsonObject.toString());
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(
+                Request.Method.POST,url, jsonObject,
+                new Response.Listener<JSONObject>() {
                     @Override
-                    public void onResponse(String response) {
-                        goToProfile();
-                        Toast.makeText(LoginActivity.this,response,Toast.LENGTH_LONG).show();
+                    public void onResponse(JSONObject response) {
+                        Toast.makeText(LoginActivity.this,response.toString(),Toast.LENGTH_LONG).show();
+                        try {
+                            token = response.getString("token");
+                            goToProfile(response.getString("token"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
 
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        createLoginAlert();
-                    }
-                }){
             @Override
-            protected Map<String,String> getParams(){
-                Map<String,String> params = new HashMap<String, String>();
-                params.put("username",usernameEditText.getText().toString());
-                params.put("password",passwordEditText.getText().toString());
-                return params;
-            }
+            public void onErrorResponse(VolleyError error) {
 
+            }
+        }) {
+
+            /**
+             * Passing some request headers
+             * */
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json; charset=utf-8");
+                return headers;
+            }
         };
 
         // Add the request to the RequestQueue.
-        queue.add(stringRequest);
+        queue.add(jsonObjReq);
 
+    }
+
+    private JSONObject getJsonObject() throws JSONException {
+        final TextView userName = (TextView) findViewById(R.id.username);
+        final TextView password = (TextView) findViewById(R.id.password);
+        JSONObject userObject = new JSONObject();
+        userObject.put("username",userName.getText().toString());
+        userObject.put("password",password.getText().toString());
+        return userObject;
     }
 
 

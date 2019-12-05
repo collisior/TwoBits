@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,13 +38,15 @@ public class RegistrationActivity extends AppCompatActivity {
             signUpButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    openCategories();
+                    signUp();
                 }
             });
         }
 
-        public void openCategories(){
+        public void openCategories(String token, String id){
             Intent intent = new Intent(this, categoriesActivity.class);
+            intent.putExtra("token",token);
+            intent.putExtra("id: ", id  );
             startActivity(intent);
         }
 
@@ -66,7 +69,13 @@ public class RegistrationActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Toast.makeText(RegistrationActivity.this,response.toString(),Toast.LENGTH_LONG).show();
-                        openCategories();
+                        try {
+                            id = response.getString("id");
+                            attemptLogin(response.getString("id"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
                     }
                 }, new Response.ErrorListener() {
 
@@ -85,43 +94,67 @@ public class RegistrationActivity extends AppCompatActivity {
                 headers.put("Content-Type", "application/json; charset=utf-8");
                 return headers;
             }
+        };
 
-//        JsonObjectRequest stringRequest = new JsonObjectRequest(Request.Method.POST, url,
-//                new Response.Listener<JSONObject>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        Toast.makeText(RegistrationActivity.this,response,Toast.LENGTH_LONG).show();
-//                    }
-//                },
-//                new Response.ErrorListener() {
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        Log.d("debug", "signUp: "+ error);
-//
-//                        Toast.makeText(RegistrationActivity.this,error.toString(),Toast.LENGTH_LONG).show();
-//                    }
-//                }){
-//            @Override
-//            protected Map<String,String> getParams(){
-//                Map<String,String> params = new HashMap<String, String>();
-//                params.put("username",userName.getText().toString());
-//                params.put("email",email.getText().toString());
-//                params.put("password",password.getText().toString());
-//
-//
-//                params.put("profile", firstName.getText().toString());
-//                params.put("last_name", lastName.getText().toString());
-//
-//                try {
-//                    params.put("profile", getJsonObject(firstName.getText().toString(), lastName.getText().toString()));
-//                }catch(JSONException e){}
-//                return params;
-//            }
+        // Add the request to the RequestQueue.
+        queue.add(jsonObjReq);
+
+    }
+    private static String token;
+    private static String id;
+
+    public static String getToken(){
+        return token;
+    }
+    public static String getId(){
+        return id;
+    }
+
+    public void attemptLogin(String id){
+        final EditText usernameEditText = findViewById(R.id.username);
+        final EditText passwordEditText = findViewById(R.id.password);
+
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url ="http://10.0.2.2:8000/api/users/login/";
+        JSONObject jsonObject = null;
+        try {
+            jsonObject = getJsonObject();
+        } catch (JSONException e) {
+
+        }
+        Log.d("JSONOBJECT",jsonObject.toString());
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(
+                Request.Method.POST,url, jsonObject,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Toast.makeText(RegistrationActivity.this,response.toString(),Toast.LENGTH_LONG).show();
+                        try {
+                            token = response.getString("token");
+                            openCategories(response.getString("token"),id);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
 
 
+                    }
+                }, new Response.ErrorListener() {
 
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
+            }
+        }) {
 
+            /**
+             * Passing some request headers
+             * */
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json; charset=utf-8");
+                return headers;
+            }
         };
 
         // Add the request to the RequestQueue.

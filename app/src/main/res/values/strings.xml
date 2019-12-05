@@ -36,6 +36,21 @@
     well as educational and preventative
     care services.</string>
 
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="welcome_reg">WELCOME TO</string>
+    <string name="step1">You choose, you donate.</string>
+    <string name="step1desc">Choose a charity, political organization, or a general category to designate donations to.</string>
+    <string name="step2">Enter card or bank information.</string>
+    <string name="step2desc">Enter the card and/or bank account you would like to donate money from.
+    All your information will be kept secure!</string>
+    <string name="plaidsuccess">SUCCESS</string>
+    <string name="plaidsuccessdesc">Your card/ bank information has been successfully and securely validated,
+    and you are subscribed to donate!</string>
+
     <!-- Strings related to PLAID api -->
     <string name="content_success">Public Token:\n%1$s\n\n Account Id:\n%2$s\n\n Account Name:\n%3$s\n\n Institution Id:\n%4$s\n\n Institution Name:\n%5$s</string>
     <string name="content_cancelled">Institution Id:\n%1$s\n\n Institution Name:\n%2$s\n\n Link Session Id:\n%3$s\n\n Status:\n%4$s</string>

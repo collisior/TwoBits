@@ -1,6 +1,7 @@
 package com.example.a2bits.ui.login;
 
 import android.app.Application;
+import android.content.Intent;
 import android.util.Log;
 
 import com.plaid.link.BuildConfig;
@@ -20,8 +21,10 @@ public class LinkSampleJavaApplication extends Application {
                 .logLevel(BuildConfig.DEBUG ? LogLevel.DEBUG : LogLevel.ASSERT)
                 .build();
 
-        Log.d("test", "Plaid created!!!");
+        Log.d("TEST", "Plaid user created!");
 
         Plaid.create(this, plaidOptions);
+
     }
+
 }
