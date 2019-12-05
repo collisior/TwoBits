@@ -16,6 +16,7 @@ public class plaidsuccess extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plaidsuccess);
+<<<<<<< HEAD
         Button nextButton = findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,8 +26,22 @@ public class plaidsuccess extends AppCompatActivity {
         });
     }
 
+=======
+    Button nextButton = findViewById(R.id.nextButton);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            openProfile();
+        }
+    });
+}
+>>>>>>> 49923980832c1f57b11564d233d1ad5dc39687cb
     public void openProfile(){
         Intent intent = new Intent(this, profileActivity.class);
         startActivity(intent);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 49923980832c1f57b11564d233d1ad5dc39687cb

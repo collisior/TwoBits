@@ -50,6 +50,7 @@
     <string name="plaidsuccess">SUCCESS</string>
     <string name="plaidsuccessdesc">Your card/ bank information has been successfully and securely validated,
     and you are subscribed to donate!</string>
+<<<<<<< HEAD
 
     <!-- Strings related to PLAID api -->
     <string name="content_success">Public Token:\n%1$s\n\n Account Id:\n%2$s\n\n Account Name:\n%3$s\n\n Institution Id:\n%4$s\n\n Institution Name:\n%5$s</string>
@@ -57,5 +58,7 @@
     <string name="content_exit">Display Message:\n%1$s\n\n Error Code:\n%2$s\n\n Error Message:\n%3$s\n\n Institution Id:\n%4$s\n\n Institution Name:\n%5$s\n\n Status:\n%6$s</string>
     <string name="content_exception">Exception Class:\n%1$s\n\n Exception Message:\n%2$s</string>
 
+=======
+>>>>>>> 49923980832c1f57b11564d233d1ad5dc39687cb
 
 </resources>
