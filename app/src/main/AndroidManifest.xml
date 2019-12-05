@@ -90,7 +90,6 @@
             android:value="95085c16f77d44263154ce9c5e2135"/>
 
 
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
