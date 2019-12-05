@@ -63,22 +63,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.44" />
 
-<!--    <androidx.viewpager.widget.ViewPager-->
-<!--        android:id="@+id/viewPager"-->
-<!--        android:layout_width="314dp"-->
-<!--        android:layout_height="134dp"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:layout_marginTop="300dp"-->
-<!--        android:layout_marginBottom="200dp"-->
-<!--        android:clipToPadding="true"-->
-<!--        android:foregroundGravity="center"-->
-<!--        android:overScrollMode="never"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.484"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.268" />-->
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:id="@+id/viewPager"-->
+    <!--        android:layout_width="314dp"-->
+    <!--        android:layout_height="134dp"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginTop="300dp"-->
+    <!--        android:layout_marginBottom="200dp"-->
+    <!--        android:clipToPadding="true"-->
+    <!--        android:foregroundGravity="center"-->
+    <!--        android:overScrollMode="never"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.484"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.268" />-->
 
     <Button
         android:id="@+id/following_button"
@@ -279,6 +279,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.89" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="417dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="266dp"
+        android:text="To registration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,11 @@
 package com.example.a2bits.ui.login;
 
 import android.animation.ArgbEvaluator;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import com.example.a2bits.R;
 import com.example.a2bits.ui.Adaptor;
 import com.example.a2bits.ui.Model;
@@ -20,9 +24,22 @@ public class profileActivity extends AppCompatActivity {
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
 
+    public void gotoRegir(){
+        Intent intent = new Intent(this, RegistrationActivity.class);
+        startActivity(intent);
+    }
+
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
+
+        Button toRegir = findViewById(R.id.button7);
+        toRegir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoRegir();
+            }
+        });
 
 //        Title: Android Swipe Views using Viewpager
 //        Author: Haerul Muttaqin
