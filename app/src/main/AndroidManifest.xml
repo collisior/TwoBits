@@ -12,9 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".plaidsuccess"></activity>
+        <activity android:name=".ui.login.plaidsuccess"
+            android:label="Plaid Success">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".bankcardinfo" />
         <activity android:name=".ui.login.categoriesActivity" />
+        <activity android:name=".ui.login.healthActivity" />
         <activity android:name=".main" />
         <activity
             android:name=".splash"
@@ -52,6 +60,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ui.login.profileActivity"
             android:label="Profile">
