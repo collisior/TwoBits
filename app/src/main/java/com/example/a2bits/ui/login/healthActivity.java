@@ -3,7 +3,13 @@ package com.example.a2bits.ui.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.example.a2bits.R;
@@ -42,8 +48,10 @@ public class healthActivity extends AppCompatActivity {
 
         Button donateButton = findViewById(R.id.donateHealth);
 
+        UserPlaidActivity.auhtorizePlaidUser(donateButton, healthActivity.this);
+
         donateButton.setOnClickListener(view -> {
-            goToProfile();
+
             Log.d("donate button pressed", "PROCESS initiated");
             ArrayList<PlaidProduct> products = new ArrayList<>();
             products.add(PlaidProduct.TRANSACTIONS);
@@ -52,36 +60,8 @@ public class healthActivity extends AppCompatActivity {
                     new LinkConfiguration.Builder("user_good", products).build(),
                     LINK_REQUEST_CODE);
         });
+
     }
 
-    public void goToProfile(){
-        Intent intent = new Intent(this, profileActivity.class);
-        startActivity(intent);
-    }
 
-    @Override
-    protected void onActivityResult(
-            int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == LINK_REQUEST_CODE && data != null) {
-            Log.d("ProfileActivityEvent", "Plaid done");
-            if (Plaid.RESULT_SUCCESS == resultCode) {
-                Log.d("resultCode", "RESULT_SUCCESS");
-                LinkConnection item = (LinkConnection) data.getSerializableExtra(Plaid.LINK_RESULT);
-                if (item != null) {
-                    LinkConnectionMetadata metadata = item.getLinkConnectionMetadata();
-                    Log.d("Public token = ", item.getPublicToken());
-                }
-            }
-            else if (Plaid.RESULT_CANCELLED == resultCode) {
-                Log.d("resultCode", "RESULT_CANCELLED");
-            }
-            else if (Plaid.RESULT_EXIT == resultCode) {
-                Log.d("resultCode", "RESULT_EXIT");
-            }
-            else if (Plaid.RESULT_EXCEPTION == resultCode) {
-                Log.d("resultCode", "RESULT_EXCEPTION");
-            }
-        }
-    }
 }
