@@ -38,7 +38,6 @@ public class RegistrationActivity extends AppCompatActivity {
             signUpButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-<<<<<<< HEAD
                     signUp();
                 }
             });
@@ -48,21 +47,8 @@ public class RegistrationActivity extends AppCompatActivity {
             Intent intent = new Intent(this, categoriesActivity.class);
             intent.putExtra("token",token);
             intent.putExtra("id: ", id  );
-=======
-                    openStep();
-                }
-            });
-        }
-        public void openStep(){
-            Intent intent = new Intent(this, postRegInst.class);
->>>>>>> 49923980832c1f57b11564d233d1ad5dc39687cb
             startActivity(intent);
         }
-
-       // public void openCategories(){
-         //   Intent intent = new Intent(this, categoriesActivity.class);
-           // startActivity(intent);
-        //}
 
     public void signUp(){
 
@@ -83,7 +69,6 @@ public class RegistrationActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Toast.makeText(RegistrationActivity.this,response.toString(),Toast.LENGTH_LONG).show();
-<<<<<<< HEAD
                         try {
                             id = response.getString("id");
                             attemptLogin(response.getString("id"));
@@ -91,9 +76,6 @@ public class RegistrationActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
 
-=======
-                        openStep();
->>>>>>> 49923980832c1f57b11564d233d1ad5dc39687cb
                     }
                 }, new Response.ErrorListener() {
 
