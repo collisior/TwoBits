@@ -47,5 +47,8 @@
     <string name="step2">Enter card or bank information.</string>
     <string name="step2desc">Enter the card and/or bank account you would like to donate money from.
     All your information will be kept secure!</string>
+    <string name="plaidsuccess">SUCCESS</string>
+    <string name="plaidsuccessdesc">Your card/ bank information has been successfully and securely validated,
+    and you are subscribed to donate!</string>
 
 </resources>
