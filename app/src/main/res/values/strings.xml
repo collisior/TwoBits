@@ -35,6 +35,11 @@
     other specialized health services) as
     well as educational and preventative
     care services.</string>
+    <string name="animalRightsSummary">Nonprofit Animal Rights organizations
+    providing Animal Medical Care,
+    Prevention of Cruelty,
+    captive animals protection, etc.
+    </string>
 
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_home">Home</string>
