@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         registrationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openRegistration();
+                attemptLogin();
             }
         });
 

@@ -16,14 +16,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".bankcardinfo"></activity>
-        <activity android:name=".ui.login.plaidsuccess"
-            android:label="Plaid Success">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <activity android:name=".main" />
         <activity
@@ -90,6 +82,15 @@
         </activity>
 
         <activity android:name="com.plaid.link.LinkActivity" />
+
+        <activity android:name=".ui.login.plaidsuccess"
+            android:label="Plaid Success">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data android:name="com.plaid.link.public_key"
             android:value="95085c16f77d44263154ce9c5e2135"/>
