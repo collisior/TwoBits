@@ -29,5 +29,8 @@ https://github.com/abeeki16/TwoBitsServer
 
 ```
 git clone https://github.com/collisior/TwoBits.git
+1) open /app folder in android studio
+2) preferebly use a Nexus 6P emulator
+3) hit run
 
 ```
