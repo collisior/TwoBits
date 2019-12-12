@@ -28,6 +28,6 @@ https://github.com/abeeki16/TwoBitsServer
 
 
 ```
-got clone
+git clone https://github.com/collisior/TwoBits.git
 
 ```
