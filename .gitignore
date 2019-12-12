@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+=======
 *.log
 *.pot
 *.pyc
@@ -89,3 +105,4 @@ lint/intermediates/
 lint/generated/
 lint/outputs/
 lint/tmp/
+>>>>>>> ef2e71a9774a64a2832b61df27d60cfd05e002c6
