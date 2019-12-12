@@ -31,7 +31,7 @@ https://github.com/abeeki16/TwoBitsServer
 git clone https://github.com/collisior/TwoBits.git
 1) open /app folder in android studio
 2) preferebly use a Nexus 6P emulator
-3) make sure you have the backend running first
+3) make sure you have the [backend](https://github.com/abeeki16/TwoBitsServer)running first 
 4) hit run
 
 ```
