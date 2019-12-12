@@ -6,10 +6,10 @@ Project repository for the CS591 X-Lab Practicum. <br />
 Fall 2019, Boston University.
 
 ## Team members
-* [](https://github.com/)
-* [](https://github.com/)
-* [](https://github.com/)
-* [](https://github.com/)
+* [Camilla Satte](https://github.com/collisior)
+* [Ajit Beeki](https://github.com/abeeki16)
+* [William Munoz](https://github.com/WillPower98)
+* [Kaylyn Mok](https://github.com/mhkaylyn)
 
 ## Technologies
 
