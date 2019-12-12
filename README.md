@@ -19,7 +19,12 @@ Fall 2019, Boston University.
 
 ## Essential info
 
+## Companion Server/Backend code
+
+https://github.com/abeeki16/TwoBitsServer
+
 ## How to run the code?
+
 
 
 ```
