@@ -37,5 +37,5 @@ git clone https://github.com/collisior/TwoBits.git
 4) hit run
 
 To test plaid login use sand-box credentials:<br>
-username: user_good<br<br>
-password: pass_good<br <br>
+username: user_good<br>
+password: pass_good<br>
