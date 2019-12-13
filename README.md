@@ -35,9 +35,15 @@ git clone https://github.com/collisior/TwoBits.git
 2) preferebly use a Nexus 6P emulator
 3) make sure you have the backend
 running first. To run the backend do the following:
+
  a. cd serverside
+ 
  b. pip install -r requirements.txt
+ 
  c. python manage.py makemigrations
+ 
  d. python manage.py migrate
+ 
  e. python manage.py runserver
+ 
 4) hit run
