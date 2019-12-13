@@ -35,3 +35,7 @@ git clone https://github.com/collisior/TwoBits.git
 2) preferebly use a Nexus 6P emulator
 3) make sure you have the backend(https://github.com/abeeki16/TwoBitsServer) running first 
 4) hit run
+
+To test plaid login use sand-box credentials:<br>
+username: user_good<br<br>
+password: pass_good<br <br>
